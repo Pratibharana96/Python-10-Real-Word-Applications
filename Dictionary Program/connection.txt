@@ -1,0 +1,11 @@
+Now using pyp myadmin database for loading huge data
+Type the command for the package you want to install:
+
+To install the MySQL-python package, type the following command:
+1.pip install MySQL-python
+
+To install the mysql-connector-python package, type the following command:
+2.pip install mysql-connector-python
+
+To install the pymysql package, type the following command:
+3.pip install pymysql
