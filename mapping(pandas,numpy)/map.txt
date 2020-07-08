@@ -1,0 +1,3 @@
+IN this Project 2 , We are building web map using python and folium 
+Install Folium using cmd:
+>> pip3 Install folium
