@@ -1,3 +1,6 @@
 IN this Project 2 , We are building web map using python and folium 
 Install Folium using cmd:
 >> pip3 Install folium
+* Now for importing n number of location in web map we store all the data in files , to work on  
+ data we use pandas here, 
+>>pip install pandas
