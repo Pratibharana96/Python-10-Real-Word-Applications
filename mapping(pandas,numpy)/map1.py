@@ -6,6 +6,14 @@ data = pd.read_csv('Volcanoes.txt')
 lat = list(data["LAT"])
 lon = list(data["LON"])
 elev = list(data["ELEV"])
+# function for managing color 
+def color_changer(elv):
+    if elv < 1000:
+        return 'green'
+    elif elv <=3000:
+        return 'orange'
+    else:
+        return 'red'
 # print(lon)
 map=folium.Map(location=[38.58, -99.09],zoom_start=6,tiles='OpenStreetMap')
 #2. create a feature group
@@ -14,7 +22,7 @@ fg=folium.FeatureGroup(name="My Map")
 for lt,ln,elv in zip(lat,lon,elev):
     # print(type(elv))
     fg.add_child(folium.Marker(location=[lt,ln], popup=str(elv)+" m", tooltip=None, 
-    icon=folium.Icon(color='blue', icon_color='white', icon='info-sign', angle=0, prefix='glyphicon')))
+    icon=folium.Icon(color=color_changer(elv), icon_color='white', icon='info-sign', angle=0, prefix='glyphicon')))
     
     # fg.add_child(folium.Marker(location=[29.898699, 79.576839], popup="Hi I am Pratibha ", tooltip=None, 
     # icon=folium.Icon(color='blue', icon_color='white', icon='info-sign', angle=0, prefix='glyphicon'), draggable=False))

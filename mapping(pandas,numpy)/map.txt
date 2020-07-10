@@ -4,3 +4,5 @@ Install Folium using cmd:
 * Now for importing n number of location in web map we store all the data in files , to work on  
  data we use pandas here, 
 >>pip install pandas
+*Now adding different color at different location based on elevation value using  function and passing if elif conditions
+ 
