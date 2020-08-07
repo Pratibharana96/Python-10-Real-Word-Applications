@@ -1,0 +1,16 @@
+{
+    "params":
+    {
+     "local_server" :"True",
+     "local_uri":"mysql://root:@localhost/pratibhaflask",
+     "prod_uri":"mysql://root:@localhost/pratibhaflask",
+     "fb_uri":"https://www.facebook.com/pratibha.rana.395",
+     "insta_uri":"https://www.instagram.com/theinstamiss/",
+     "blog_name":"Pratibha Rana",
+     "gmail_user":"pratibharana@gmail.com",
+     "gmail_password":"************",
+     "no_of_posts":4
+    }
+
+}
+
